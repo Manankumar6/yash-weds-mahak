@@ -27,4 +27,13 @@ export const WEDDING_DATE = {
   minute: 0,
 };
 
+export const venueData = {
+  title: "Wedding Venue",
+  venueName: "The Grand Palace Banquet Hall",
+  address: "12, Lakeview Road, South Delhi, India",
+  date: "12th February 2026",
+  time: "8:00 PM Onwards",
+  mapLink: "https://maps.google.com/?q=The+Grand+Palace+Banquet+Hall",
+  backgroundImage: "/images/bride.jpg",
+};
 export default coupleData;

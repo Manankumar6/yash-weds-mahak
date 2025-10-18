@@ -1,6 +1,8 @@
 import Countdown from "./components/Countdown";
 import CoupleCard from "./components/CoupleCard";
 import Hero from "./components/Hero";
+import Program from "./components/Program";
+import Venue from "./components/Venue";
 import coupleData from "./data/coupleData";
 import { WEDDING_DATE } from "./data/coupleData";
 
@@ -33,6 +35,8 @@ const targetDate = new Date(
         ))}
       </div>
       <Countdown targetDate={targetDate} />
+      <Venue/>
+      <Program/>
       </>
   );
 }

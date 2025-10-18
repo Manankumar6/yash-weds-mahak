@@ -53,7 +53,7 @@ const Countdown = ({ targetDate }) => {
             <div className="absolute inset-0 bg-black/40 z-0"></div>
 
             {/* Main content */}
-            <div className="relative z-10 bg-white/90 p-6 sm:p-10 rounded-2xl max-w-5xl mx-auto">
+            <div className="relative z-10 bg-white/90 p-6 sm:p-10 rounded-2xl max-w-2xl mx-auto">
                 <h2 className="text-5xl font-light text-gray-900  text-left">
                     The Countdown
                 </h2>
