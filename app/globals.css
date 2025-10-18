@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
+/* 🌤️ Always Light Theme */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a1a1a;
+
+  /* 🎨 Custom light theme variables */
+  --color-bg-primary: #faf7f5; /* soft ivory / off-white */
+  --color-bg-overlay: rgba(255, 255, 255, 0.6); /* translucent white */
+ --color-text-primary: #111827; /* almost black (Tailwind gray-900) */
+ --color-text-secondary: #2d2d2d; /* dark neutral gray for readability */
+  --color-accent: #e11d48; /* rose-600 */
+  --color-glow: rgba(255, 200, 100, 0.8); /* warm golden glow */
 }
 
+.heading {
+  font-family: var(--font-poppins);
+}
+
+/* 🧩 Tailwind theme inline setup */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-bg-primary: var(--color-bg-primary);
+  --color-bg-overlay: var(--color-bg-overlay);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-accent: var(--color-accent);
+  --color-glow: var(--color-glow);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 🌸 Base styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-bg-primary);
+  color: var(--color-text-secondary);
   font-family: Arial, Helvetica, sans-serif;
 }

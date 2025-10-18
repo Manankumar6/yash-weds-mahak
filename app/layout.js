@@ -1,5 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Allura, Playfair_Display, Cormorant_Garamond, Poppins } from "next/font/google";
 import "./globals.css";
+import AosInitializer from "./components/AosInitializer";
+
+
+const allura = Allura({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const poppins = Poppins({ 
+  subsets: ["latin"], 
+  weight: ["100", "300", "400"],
+  variable: "--font-poppins",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,8 +33,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${poppins.variable} ${allura.className} antialiased`}
       >
+        <AosInitializer/>
         {children}
       </body>
     </html>
