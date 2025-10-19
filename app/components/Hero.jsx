@@ -12,10 +12,11 @@ const Hero = () => {
     >
       {/* Gradient overlay on background */}
       <div className="absolute inset-0 bg-bg-overlay"></div>
-
+       
       {/* Foreground image container */}
       <div className="absolute h-full inset-0 flex items-center justify-center">
         <div className="relative w-md h-full">
+         
           <Image
             src="/images/hero.webp"
             alt="Foreground Image"
@@ -69,7 +70,7 @@ const Hero = () => {
                 <p data-aos="fade-right" data-aos-delay="800" className="heading">SATURDAY</p>
                 {/* Main Day Number */}
                 <span  data-aos="zoom-in"
-                  data-aos-delay="900" className="text-6xl md:text-8xl  heading text-white drop-shadow-lg">
+                  data-aos-delay="900" className="text-6xl md:text-8xl  heading text-accent drop-shadow-lg">
                   22
                 </span>
                 <p data-aos="fade-left" data-aos-delay="800" className="heading">AT 3:30 PM</p>

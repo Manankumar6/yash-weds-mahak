@@ -15,7 +15,7 @@ const programData = [
   {
     time: "4:30 PM",
     title: "COCKTAIL HOUR",
-    icon: <FaGlassCheers  className="w-8 h-8 text-gray-700" />,
+    icon: <FaGlassCheers className="w-8 h-8 text-gray-700" />,
   },
   {
     time: "5:00 PM",
@@ -25,12 +25,12 @@ const programData = [
   {
     time: "6:30 PM",
     title: "Dinner Reception",
-    icon: <MdDinnerDining  className="w-8 h-8 text-gray-700" />,
+    icon: <MdDinnerDining className="w-8 h-8 text-gray-700" />,
   },
   {
     time: "8:00 PM",
     title: "Dance Party",
-    icon: <GiPartyPopper   className="w-8 h-8 text-gray-700" />,
+    icon: <GiPartyPopper className="w-8 h-8 text-gray-700" />,
   },
 ];
 
@@ -39,27 +39,27 @@ const Program = () => {
     <section
       className="relative py-16 px-4 md:px-8 bg-cover bg-center"
       style={{
-        backgroundImage: "url('/images/bride.jpg')",
+        backgroundImage: "url('/images/program-bg.png')",
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-white/20 backdrop-blur-sm"></div>
 
       {/* Main container */}
-      <div className="relative z-10 rounded-b-full max-w-xl mx-auto bg-white/70 backdrop-blur-md rounded-3xl shadow-xl p-8 md:p-12 text-center">
+      <div className="relative overflow-hidden z-10 rounded-b-full max-w-xl mx-auto bg-white/70 backdrop-blur-md rounded-3xl shadow-xl p-8 md:p-12 text-center">
         {/* Title */}
-        <div className="flex justify-center items-center gap-3 mb-8">
+        <div className="flex relative justify-center items-center gap-3 mb-8">
           <Image
             src="/images/ring.png"
             alt="Program Rings"
             width={100}
             height={100}
-            className="opacity-80"
-               data-aos="fade-right"
+            className="opacity-70 absolute left-0 "
+            data-aos="fade-right"
           />
-          <h2 
-           data-aos="fade-left"
-          className="text-4xl md:text-6xl font-['Playfair_Display'] text-gray-900 tracking-wide">
+          <h2
+            data-aos="fade-left"
+            className="text-4xl md:text-6xl heading font-bold text-gray-700 tracking-wide">
             PROGRAM
           </h2>
         </div>
@@ -73,9 +73,9 @@ const Program = () => {
             <div
               key={index}
               className="relative flex flex-col items-center text-center"
-               data-aos="fade-up"              // 👈 add fade-up animation
-      data-aos-delay={index * 200}    // 👈 each one slightly delayed
-      data-aos-duration="800" 
+              data-aos="fade-up"              // 👈 add fade-up animation
+              data-aos-delay={index * 200}    // 👈 each one slightly delayed
+              data-aos-duration="800"
             >
               {/* Icon + dot */}
               <div className="flex flex-col items-center">
@@ -89,16 +89,24 @@ const Program = () => {
 
               {/* Text */}
               <div className="mt-4">
-                <h3 className="text-2xl md:text-3xl font-semibold text-gray-900">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
                   {item.time}
                 </h3>
-                <p className="text-lg md:text-xl font-medium text-gray-700 mt-1">
+                <p className="text-lg md:text-xl font-semibold text-gray-700 mt-1">
                   {item.title}
                 </p>
               </div>
             </div>
           ))}
         </div>
+        <Image
+          src={'/images/white-flower.png'}
+          width={250}
+          height={150}
+          className="absolute -left-5 bottom-0 -z-10 opacity-40 "
+          alt="flower"
+
+        />
       </div>
     </section>
   );

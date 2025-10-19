@@ -110,10 +110,19 @@ const Countdown = ({ targetDate }) => {
                         data-aos-duration="1200"
                         data-aos-delay="500"
                         className="text-5xl md:text-7xl text-center absolute -translate-x-1/2 -translate-y-1/2 top-[74%]  left-1/2 w-full px-5 mx-auto">We can't wait to celebrate with you!</p>
+                        
                 </div>
-
+   <Image
+                    src={'/images/blue-flower.png'}
+                    width={200}
+                    height={100}
+                    className="absolute right-0 bottom-0 z-90 rotate-180"
+                    alt="flower"
+            
+                    />
 
             </div>
+           
         </div>
     );
 };
