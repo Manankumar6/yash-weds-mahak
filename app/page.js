@@ -3,6 +3,7 @@ import CoupleCard from "./components/CoupleCard";
 import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import Program from "./components/Program";
+import RSVPSection from "./components/RSVPSection";
 import Venue from "./components/Venue";
 import coupleData from "./data/coupleData";
 import { WEDDING_DATE } from "./data/coupleData";
@@ -39,6 +40,7 @@ const targetDate = new Date(
       <Venue/>
       <Program/>
       <Gallery/>
+      <RSVPSection/>
       </>
   );
 }

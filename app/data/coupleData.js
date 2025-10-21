@@ -43,31 +43,31 @@ export const galleryData = [
     size: "large", // can be 'small', 'large', 'wide', or 'tall'
   },
   {
-    src: "https://i.pinimg.com/736x/d9/39/6e/d9396e135c6596cce647ec02c5bd8ad2.jpg",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj3N3k4rDTeSUGUE6G_25HNaJJfW5o9YIkDw&s",
     size: "small",
   },
   {
-    src: "https://ca-times.brightspotcdn.com/dims4/default/02e16ec/2147483647/strip/true/crop/1366x717+0+0/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fb1%2Fdc%2Fa840ebaf434da94c2cc58db74b99%2Findian-wedding-events-by-sahiba-sandbox-studios.jpg",
+    src: "https://shaadiwish.com/blog/wp-content/uploads/2020/11/pre-wedding-shoot-ideas.jpg",
     size: "tall",
   },
   {
-    src: "https://i.pinimg.com/originals/bd/f9/52/bdf952fe521f1232076d029ec75890d0.jpg",
+    src: "https://weddingsbyknottydays.com/wp-content/uploads/2021/07/Taj-Mahal-Pre-Wedding-Shoot-Weddings-by-Knotty-Days-Karen-Vimal1.jpg",
     size: "small",
   },
   {
-    src: "https://image8.photobiz.com/3003/13_20180820223608_8561664_large.jpg",
+    src: "https://onehorizonproductions.com/wp-content/uploads/2023/05/OHP-03325-scaled.webp",
     size: "wide",
   },
   {
-    src: "https://d397bfy4gvgcdm.cloudfront.net/72522-hindu-gujrati-indian-wedding-photography-dallas-29-orig.jpeg",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSEZqsTGDJPC9uaNdlXfr_D4Dpq3PM2kP87A&s",
     size: "small",
   },
   {
-    src: "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/75e56967-3094-4dcd-9ad3-742225b4704c/fdf6d11a-f77e-41db-9960-b096fa0a4d5f.png",
+    src: "https://magica.in/media/posts/12/NK_PreWed_109.jpg",
     size: "small",
   },
   {
-    src: "https://t4.ftcdn.net/jpg/06/09/22/61/360_F_609226121_xEBi82aJan0Z0DT4C9loPJe9jkcVr0Lq.jpg",
+    src: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9a7ef236689293.5725fdf925437.jpg",
     size: "small",
   },
 ];
