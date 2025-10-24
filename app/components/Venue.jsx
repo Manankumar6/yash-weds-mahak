@@ -76,7 +76,7 @@ const Venue = () => {
                         className="inline-flex heading items-center justify-center gap-2 bg-accent/90 hover:bg-accent text-white font-medium py-3 px-6 rounded-full transition-all mt-6"
                     >
                         <FiMapPin className="w-5 h-5" />
-                        View on Map
+                        View on Google Map
                     </Link>
                     <Image
                         src={'/images/pink-flower.png'}

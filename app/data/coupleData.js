@@ -52,7 +52,7 @@ export const galleryData = [
   },
   {
     src: "https://weddingsbyknottydays.com/wp-content/uploads/2021/07/Taj-Mahal-Pre-Wedding-Shoot-Weddings-by-Knotty-Days-Karen-Vimal1.jpg",
-    size: "small",
+    size: "wide",
   },
   {
     src: "https://onehorizonproductions.com/wp-content/uploads/2023/05/OHP-03325-scaled.webp",
@@ -68,7 +68,7 @@ export const galleryData = [
   },
   {
     src: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9a7ef236689293.5725fdf925437.jpg",
-    size: "small",
+    size: "wide",
   },
 ];
 export default coupleData;

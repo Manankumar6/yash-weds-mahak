@@ -39,7 +39,7 @@ export default function RSVPSection() {
           ))}
         </div>
 
-        <p className="text-white/90 text-lg font-light mb-8">
+        <p className="text-white/90 text-xl font-light mb-8">
           We’d love to celebrate this special day with you!  
           Kindly confirm your presence below.
         </p>

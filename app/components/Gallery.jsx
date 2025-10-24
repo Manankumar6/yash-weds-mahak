@@ -10,17 +10,32 @@ const sizeClasses = {
 
 export default function GallerySection() {
   return (
-    <section className="py-10  bg-gradient-to-b from-white via-rose-50/30 to-white">
-      <div className="max-w-7xl mx-auto px-2">
+    <section
+      style={{
+        backgroundImage:
+          "url(https://static.vecteezy.com/system/resources/previews/007/565/379/large_2x/greenery-watercolor-floral-background-with-brush-and-floral-frame-for-horizontal-banner-backdrop-wedding-invitation-thank-you-card-wallpaper-free-photo.jpg)",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "contain",
+        backgroundSize: "cover",
+      }}
+      className="py-10 relative bg-gradient-to-b from-white via-rose-50/30 to-white"
+    >
+      {/* Blur Overlay */}
+      <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] z-0" />
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-2">
         {/* Title */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-6xl heading text-gray-900 mb-3">
+          <h2 className="text-4xl md:text-6xl heading text-gray-900 mb-3 drop-shadow-md">
             Pre Wedding
           </h2>
-          <p className="text-gray-600 text-xl font-semibold">A glimpse into our world ✨</p>
+          <p className="text-gray-700 text-xl font-semibold drop-shadow-sm">
+            A glimpse into our world ✨
+          </p>
         </div>
 
-        {/* Grid */}
+        {/* Image Grid */}
         <div className="grid grid-cols-2 md:grid-cols-6 gap-2">
           {galleryData.map((item, index) => (
             <div
