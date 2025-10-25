@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function RSVPSection() {
@@ -43,11 +44,14 @@ export default function RSVPSection() {
           We’d love to celebrate this special day with you!  
           Kindly confirm your presence below.
         </p>
+       
 
         {/* 📝 RSVP Button */}
+        <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfICfvPPryMRVAMxXjOPAWMVcXJe0Zc_aGngMqPxH4f9ETsjg/viewform?usp=publish-editor' target="_blank">
         <button className="bg-white text-gray-800 font-semibold px-8 py-3 rounded-full hover:bg-pink-100 transition-all duration-300">
           Confirm Attendance
         </button>
+        </Link>
       </div>
     </section>
   );
