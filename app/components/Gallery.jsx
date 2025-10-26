@@ -28,7 +28,7 @@ export default function GallerySection() {
         {/* Title */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-6xl heading text-gray-900 mb-3 drop-shadow-md">
-            Pre Wedding
+          Our Memories
           </h2>
           <p className="text-gray-700 text-xl font-semibold drop-shadow-sm">
             A glimpse into our world ✨

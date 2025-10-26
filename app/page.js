@@ -22,6 +22,11 @@ export default function Home() {
   return (
     <>
       <Hero />
+     <p 
+      data-aos="zoom-in"
+     className="text-center text-5xl md:text-6xl font-bold px-6 py-10 bg-gradient-to-b from-pink-200 via-rose-400 to-rose-600 text-transparent bg-clip-text drop-shadow-[0_0_20px_rgba(255,182,193,0.5)] tracking-wide">
+  Meet the Lovely Couple
+</p>
 
       <div
         style={{
@@ -31,6 +36,7 @@ export default function Home() {
           backgroundSize: "cover",
         }}
         className="w-full py-5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 bg-bg-primary">
+
         {coupleData.map((person, index) => (
           <CoupleCard
             key={index}
@@ -49,8 +55,8 @@ export default function Home() {
       <Program />
       <Gallery />
       <RSVPSection />
-      <AttendSection/>
-      <FloatingMusicButton/>
+      <AttendSection />
+      <FloatingMusicButton />
     </>
   );
 }

@@ -32,16 +32,16 @@ export default function AttendSection() {
                 {/* 🌿 Decorative Divider */}
                 <div className="flex justify-center ">
                     <img
-                        src="https://images.vexels.com/media/users/3/135786/isolated/preview/a761c2a6d4fe4a9f2506fe4fa00b45b2-decorative-floral-divider.png"
+                        src="/images/divider.png"
                         alt="Floral Divider"
-                        className="opacity-80 w-40 md:w-56 h-auto object-contain"
+                        className="opacity-80 mb-5 w-40 md:w-56 h-auto object-contain"
                     />
                 </div>
 
 
                 {/* 💕 Button */}
                 <button className="bg-black text-white text-lg md:text-xl font-semibold px-10 py-3 rounded-full hover:bg-neutral-800 transition-all duration-300">
-                    I’ll Be There
+                    Thank You
                 </button>
             </div>
         </section>

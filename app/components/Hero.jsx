@@ -2,16 +2,18 @@ import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
-  return (
+  return (  
     <section
       className="relative w-full h-[120vh] bg-cover bg-center bg-bg-primary"
       style={{
-        backgroundImage: "url('/images/hero.webp')",
+        backgroundImage: "url('/images/img1.jpg')",
         backgroundPosition: "contain",
       }}
     >
       {/* Gradient overlay on background */}
       <div className="absolute inset-0 bg-bg-overlay"></div>
+
+
 
       {/* Foreground image container */}
       <div className="absolute h-full inset-0 flex items-center justify-center">
@@ -32,6 +34,13 @@ const Hero = () => {
           </div>
 
           <div className="absolute bottom-0 w-full py-4 text-center px-6 bg-bg-overlay z-20">
+        {/* <div className="w-full flex flex-col justify-center items-center">
+          <Image src={'/images/divider.png'} width={500} height={100} alt="divider"/>
+        <p className="text-center text-4xl font-bold text my-auto">निमंत्रण</p>
+          <Image src={'/images/divider.png'} width={500} height={100} alt="divider" className="rotate-180"/>
+
+        </div> */}
+
             <p
               data-aos="fade-up"
               data-aos-delay="100"
@@ -46,11 +55,11 @@ const Hero = () => {
                 drop-shadow-[0_0_8px_var(--color-glow)]
               `}
             >
-              Aarav{" "}
+              Brij Bhushan{" "}
               <span className="text-accent drop-shadow-[0_0_12px_var(--color-accent)]">
                 &
-              </span>{" "}
-              Meera
+                  </span>{" "}
+              Rishika
             </h1>
             <p
               data-aos="fade-up"
@@ -68,7 +77,7 @@ const Hero = () => {
               <div className="flex items-end w-full justify-center">
                 <div className="flex-grow h-px bg-white opacity-50"></div>
                 <span className="px-4 text-xl md:text-2xl text-white font-serif tracking-widest uppercase drop-shadow-sm">
-                  JULY
+                  Nov
                 </span>
                 <div className="flex-grow h-px bg-white opacity-50"></div>
               </div>
@@ -77,9 +86,9 @@ const Hero = () => {
                 {/* Main Day Number */}
                 <span data-aos="zoom-in"
                   data-aos-delay="900" className="text-6xl md:text-8xl  heading text-accent drop-shadow-lg">
-                  22
+                  29
                 </span>
-                <p data-aos="fade-left" data-aos-delay="800" className="heading">AT 3:30 PM</p>
+                <p data-aos="fade-left" data-aos-delay="800" className="heading">AT 8:00 PM</p>
               </div>
 
               {/* Year */}
@@ -89,7 +98,7 @@ const Hero = () => {
                   data-aos="fade-up"
                   data-aos-delay="1000"
                   className="px-4 text-xl md:text-2xl text-white font-serif tracking-widest uppercase drop-shadow-sm">
-                  2026
+                  2025
                 </span>
                 <div className="flex-grow h-px bg-white opacity-50"></div>
               </div>
