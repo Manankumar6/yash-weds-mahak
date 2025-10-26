@@ -25,7 +25,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-   title: "Aarav  & Meera's Wedding Invitation | 24 November 2025",
+   title: "Brij Bhusan  & Rishika's Wedding Invitation | 26 November 2025",
   description:
     "Join us in celebrating the union of Manan & Priya — a journey of love, laughter, and togetherness. Explore our digital wedding invitation, event details, and RSVP online.",
   keywords: [
