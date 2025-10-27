@@ -60,14 +60,26 @@ export const galleryData = [
   },
   {
     src: "/images/img7.jpg",
-    size: "small",
+    size: "wide",
   },
   {
     src: "/images/img8.jpg",
     size: "small",
   },
   {
+    src: "/images/img10.jpg",
+    size: "small",
+  },
+  {
+    src: "/images/img11.jpg",
+    size: "small",
+  },
+  {
     src: "/images/img9.jpg",
+    size: "wide",
+  },
+  {
+    src: "/images/img12.jpg",
     size: "wide",
   },
 ];
