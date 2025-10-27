@@ -2,19 +2,19 @@
 const coupleData = [
    {
     role: "The Groom",
-    name: "Brij Bhushan Bhardwaj (Krishna)",
+    name: "Brij Bhardwaj (Krishna)",
     sonOf: "Mr. RajKumar Bhardwaj & Mrs. Sunita Bhardwaj",
     profession: "",
     image: "/images/groom.jpg",
-    instagram: "https://www.instagram.com/techcanva_19/",
+    instagram: "https://www.instagram.com/bhardwajkrish?igsh=MXMxeW10aDFiMnpsYw==",
   },
   {
     role: "The Bride",
     name: "Rishika Dubey (Mona)",
     sonOf: "Mr. Ajay Dubey & Mrs. Savita Dubey",
     profession: "",
-    image: "/images/bride.jpg",
-    instagram: "https://www.instagram.com/manankumar_06/",
+    image: "/images/img8.jpg",
+    instagram: "https://www.instagram.com/its_rishikadubey?igsh=MWtmYXE2MTBpY2w1eQ==",
   },
 ];
 
