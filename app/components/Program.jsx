@@ -2,26 +2,31 @@
 import React from "react";
 import { FiCamera } from "react-icons/fi";
 
-import {  GiHeartNecklace, GiMusicalNotes,  } from "react-icons/gi"; // ✅ replaces PiRingsThin
+import {  GiCampfire, GiDiamondRing, GiGlassCelebration, GiHeartNecklace, GiMusicalNotes,  } from "react-icons/gi"; // ✅ replaces PiRingsThin
 import Image from "next/image";
-
+import { GiChampagneGlasses } from "react-icons/gi";
 import { MdDinnerDining } from "react-icons/md";
 import { FaRegFaceSadTear } from "react-icons/fa6";
 const programData = [
   {
-    time: "5:00 PM",
-    title: "LAGAN TIKA",
-    icon: <GiHeartNecklace  className="w-8 h-8 text-gray-700" />,
-  },
-  {
-    time: "8:00 PM",
-    title: "DINNER",
-    icon: <MdDinnerDining className="w-8 h-8 text-gray-700" />,
-  },
-  {
-    time: "8:00 PM",
+    time: "4:00 PM",
     title: "WELCOME CEREMONY",
     icon: <GiMusicalNotes  className="w-8 h-8 text-gray-700" />,
+  },
+  {
+    time: "6:00 PM",
+    title: "wedding vows",
+    icon: <GiCampfire  className="w-8 h-8 text-gray-700" />,
+  },
+  {
+    time: "8:00 PM",
+    title: "Dinner",
+    icon: <MdDinnerDining  className="w-8 h-8 text-gray-700" />,
+  },
+  {
+    time: "8:00 PM",
+    title: "Reception",
+    icon: <GiGlassCelebration   className="w-8 h-8 text-gray-700" />,
   },
  
   {
@@ -89,7 +94,7 @@ const Program = () => {
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
                   {item.time}
                 </h3>
-                <p className="text-lg md:text-xl font-semibold heading text-gray-700 mt-1">
+                <p className="text-lg md:text-xl uppercase font-semibold heading text-gray-700 mt-1">
                   {item.title}
                 </p>
               </div>

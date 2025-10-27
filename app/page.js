@@ -6,6 +6,7 @@ import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import Program from "./components/Program";
 import RSVPSection from "./components/RSVPSection";
+import SpecialMentionsSection from "./components/SpecialMentionsSection";
 import Venue from "./components/Venue";
 import coupleData from "./data/coupleData";
 import { WEDDING_DATE } from "./data/coupleData";
@@ -42,6 +43,7 @@ export default function Home() {
             key={index}
             index={index}
             sonOf={person.sonOf}
+            grandsonOf={person.grandsonOf}
             role={person.role}
             name={person.name}
             profession={person.profession}
@@ -53,7 +55,8 @@ export default function Home() {
       <Countdown targetDate={targetDate} />
       <Venue />
       <Program />
-      <Gallery />
+      {/* <Gallery /> */}
+      <SpecialMentionsSection/>
       <RSVPSection />
       <AttendSection />
       {/* <FloatingMusicButton /> */}

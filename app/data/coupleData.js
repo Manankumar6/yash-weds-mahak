@@ -1,20 +1,22 @@
 // coupleData.js
 const coupleData = [
-   {
+  {
     role: "The Groom",
-    name: "Brij Bhardwaj (Krishna)",
-    sonOf: "Mr. RajKumar Bhardwaj & Mrs. Sunita Bhardwaj",
+    name: "Yash",
+    sonOf: "Mr. Manish Bansal  & Mrs. Renu Bansal",
+    grandsonOf: "Lt. Shri Daughter Dayal Ji Bansal & Mrs. Saroj Bansal",
     profession: "",
-    image: "/images/groom.jpg",
-    instagram: "https://www.instagram.com/bhardwajkrish?igsh=MXMxeW10aDFiMnpsYw==",
+    image: "/images/groom.png",
+    instagram: "https://www.instagram.com/techcanva_19/",
   },
   {
     role: "The Bride",
-    name: "Rishika Dubey (Mona)",
-    sonOf: "Mr. Ajay Dubey & Mrs. Savita Dubey",
+    name: "Mahak",
+    sonOf: "Mr. Vishal Jain & Mrs. Neetu Jain",
+    grandsonOf: "Lt. Shri Rajendra Kumar Jain (Goyal) & Mrs. Sneha Lata Jain",
     profession: "",
-    image: "/images/img8.jpg",
-    instagram: "https://www.instagram.com/its_rishikadubey?igsh=MWtmYXE2MTBpY2w1eQ==",
+    image: "/images/bride.png",
+    instagram: "https://www.instagram.com/techcanva_19/",
   },
 ];
 
@@ -22,18 +24,18 @@ const coupleData = [
 export const WEDDING_DATE = {
   year: 2025,
   month: 11, // February (1 = January, 2 = February)
-  day: 29,
+  day: 23,
   hour: 20, // 24-hour format → 20 = 8 PM
   minute: 0,
 };
 
 export const venueData = {
   title: "Wedding Venue",
-  venueName: "Shri Baldau Ji Garden",
-  address: "Krishna Enclave, 100 Feet Road, Kalindri Bihar (Near R.B. Dgree College), Agra",
-  date: "29th November 2025",
+  venueName: "Tejram Dharampaul Charitable Trust",
+  address: "Rukmini Vihar, Vrindavan, Mathura (U.P.)",
+  date: "23th November 2025",
   time: "8:00 PM Onwards",
-  mapLink: "https://maps.app.goo.gl/nwbkUMH9DTiMQHWj8",
+  mapLink: "https://maps.app.goo.gl/L7a9b55PNQ3r7ruQ7",
   backgroundImage: "/images/venue-bg.png",
 };
 

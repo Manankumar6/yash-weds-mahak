@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
-const CoupleCard = ({index, name, profession, image, instagram, role ,sonOf }) => {
+const CoupleCard = ({ index, name, profession, image, instagram, role, sonOf, grandsonOf }) => {
   return (
-   <div
+    <div
       data-aos="fade-up"
       data-aos-delay={index * 200} // staggered animation
       data-aos-duration="1000"
@@ -46,7 +46,16 @@ const CoupleCard = ({index, name, profession, image, instagram, role ,sonOf }) =
         >
           {name}
         </h2>
-
+        {/* Grandson / Granddaughter of */}
+        {(grandsonOf) && (
+          <p
+            data-aos="fade-up"
+            data-aos-delay={index * 200 + 700}
+            className="text-sm md:text-base text-text-secondary italic mb-1 heading"
+          >
+            {grandsonOf}
+          </p>
+        )}
         {/* Son of */}
         <p
           data-aos="fade-up"
