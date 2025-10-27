@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono, Allura, Playfair_Display, Cormorant_Garamond, Poppins } from "next/font/google";
 import "./globals.css";
 import AosInitializer from "./components/AosInitializer";
-
+import FloatingMusicButton from './components/FloatingMusicButton'
 
 const allura = Allura({
   subsets: ["latin"],
@@ -46,6 +46,7 @@ export default function RootLayout({ children }) {
       >
         <AosInitializer/>
         {children}
+        <FloatingMusicButton/>
       </body>
     </html>
   );

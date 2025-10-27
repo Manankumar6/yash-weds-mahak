@@ -107,8 +107,8 @@ const Hero = () => {
             </div>
 
             <button
-              data-aos="fade-up"
-              data-aos-delay="1100"
+              // data-aos="fade-up"
+              // data-aos-delay="1100"
               className="font-bold px-8 py-3 bg-accent text-white text-lg rounded-full shadow-md hover:opacity-90 transition">
               Save the Date
             </button>

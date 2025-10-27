@@ -46,7 +46,7 @@ export default function GallerySection() {
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              <img
+              <Image
                 src={item.src}
                 alt={`gallery-${index}`}
                 width={600}
