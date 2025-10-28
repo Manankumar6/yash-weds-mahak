@@ -110,7 +110,7 @@ const Program = () => {
             data-aos="fade-right"
           />
           <h2
-            data-aos="fade-left"
+            data-aos="fade-up"
             className="text-5xl md:text-6xl  font-bold text-gray-800 tracking-wide"
           >
             WEDDING EVENTS
