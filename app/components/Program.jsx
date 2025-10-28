@@ -1,114 +1,163 @@
 "use client";
 import React from "react";
-import { FiCamera } from "react-icons/fi";
-
-import {  GiCampfire, GiDiamondRing, GiGlassCelebration, GiHeartNecklace, GiMusicalNotes,  } from "react-icons/gi"; // ✅ replaces PiRingsThin
 import Image from "next/image";
-import { GiChampagneGlasses } from "react-icons/gi";
+import {
+  GiDiamondRing,
+  GiCampfire,
+  GiMusicalNotes,
+  GiGlassCelebration,
+} from "react-icons/gi";
 import { MdDinnerDining } from "react-icons/md";
 import { FaRegFaceSadTear } from "react-icons/fa6";
+import { FaScroll } from "react-icons/fa";
+
 const programData = [
   {
+    date: "19th November 2025",
+    time: "11:00 AM",
+    title: "Lagan Lekhni",
+    icon: <FaScroll className="w-8 h-8 text-rose-600" />,
+    image: "/images/event8.png",
+    
+  },
+  {
+    date: "19th November 2025",
+    time: "2:00 PM",
+    title: "Lunch",
+    icon: <MdDinnerDining className="w-8 h-8 text-rose-600" />,
+    image: "/images/event9.png",
+    
+  },
+  {
+    date: "22th November 2025",
+    time: "5:00 PM",
+    title: "Engagement Ceremony",
+    icon: <GiDiamondRing className="w-8 h-8 text-rose-600" />,
+    image: "/images/event1.png",
+    
+  },
+  {
+    date: "22th November 2025",
+    time: "11:00 AM",
+    title: "Haldi & Mehendi",
+    icon: <GiCampfire className="w-8 h-8 text-yellow-600" />,
+    image: "/images/event2.png",
+    
+  },
+  {
+    date: "23th November 2025",
     time: "4:00 PM",
     title: "WELCOME CEREMONY",
-    icon: <GiMusicalNotes  className="w-8 h-8 text-gray-700" />,
+    icon: <GiMusicalNotes className="w-8 h-8 text-indigo-600" />,
+    image: "/images/event3.png",
+    
   },
   {
+    date: "23th November 2025",
     time: "6:00 PM",
     title: "wedding vows",
-    icon: <GiCampfire  className="w-8 h-8 text-gray-700" />,
+    icon: <GiCampfire className="w-8 h-8 text-orange-600" />,
+    image: "/images/event4.png",
+    
   },
   {
+    date: "23th November 2025",
     time: "8:00 PM",
     title: "Dinner",
-    icon: <MdDinnerDining  className="w-8 h-8 text-gray-700" />,
+    icon: <MdDinnerDining className="w-8 h-8 text-indigo-600" />,
+    image: "/images/event5.png",
+    
   },
   {
-    time: "8:00 PM",
-    title: "Reception",
-    icon: <GiGlassCelebration   className="w-8 h-8 text-gray-700" />,
+    date: "23th November 2025",
+    time: "9:00 PM",
+    title: "Reception Night",
+    icon: <GiGlassCelebration className="w-8 h-8 text-emerald-600" />,
+    image: "/images/event6.png",
+    
   },
- 
   {
-    time: "MORNING",
-    title: "TEARFUL EYES",
-    icon: <FaRegFaceSadTear    className="w-8 h-8 text-gray-700" />,
+    date: "24th December 2025",
+    time: "Morning",
+    title: "Tearful Eyes (Bidaai)",
+    icon: <FaRegFaceSadTear className="w-8 h-8 text-gray-600" />,
+    image: "/images/event7.png",
+    
   },
 ];
 
 const Program = () => {
   return (
     <section
-      className="relative py-16 px-4 md:px-8 bg-cover bg-center"
+      className="relative py-20 px-4 md:px-8 bg-cover bg-center"
       style={{
         backgroundImage: "url('/images/program-bg.png')",
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-white/20 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-white/30 backdrop-blur-sm"></div>
 
-      {/* Main container */}
-      <div className="relative overflow-hidden z-10 rounded-b-full max-w-xl mx-auto bg-white/70 backdrop-blur-md rounded-3xl shadow-xl p-8 md:p-12 text-center">
+      {/* Container */}
+      <div className="relative z-10 max-w-6xl mx-auto text-center">
         {/* Title */}
-        <div className="flex relative justify-center items-center gap-3 mb-8">
+        <div className="flex justify-center items-center gap-3 mb-14 relative">
           <Image
             src="/images/ring.png"
             alt="Program Rings"
-            width={100}
-            height={100}
-            className="opacity-70 absolute left-0 "
+            width={80}
+            height={80}
+            className="opacity-60 absolute left-0 animate-pulse"
             data-aos="fade-right"
           />
           <h2
             data-aos="fade-left"
-            className="text-4xl md:text-6xl heading font-bold text-gray-700 tracking-wide">
-            PROGRAM
+            className="text-5xl md:text-6xl  font-bold text-gray-800 tracking-wide"
+          >
+            WEDDING EVENTS
           </h2>
         </div>
 
-        {/* Timeline */}
-        <div className="relative flex flex-col space-y-8 mt-10">
-          {/* vertical line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] bg-gray-400/50"></div>
-
-          {programData.map((item, index) => (
+        {/* Events Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
+          {programData.map((event, index) => (
             <div
               key={index}
-              className="relative flex flex-col items-center text-center"
-              data-aos="fade-up"              // 👈 add fade-up animation
-              data-aos-delay={index * 200}    // 👈 each one slightly delayed
-              data-aos-duration="800"
+              data-aos="fade-up"
+              data-aos-delay={index * 200}
+              className="relative bg-white/80 backdrop-blur-md shadow-lg rounded-3xl overflow-hidden w-full max-w-sm hover:shadow-2xl transition-all duration-500"
             >
-              {/* Icon + dot */}
-              <div className="flex flex-col items-center">
-                <div className="bg-white border-2 border-gray-400 rounded-full p-2 z-10">
-                  {item.icon}
+              {/* Image */}
+              <div className="relative h-56 w-full overflow-hidden">
+                <img
+                  src={event.image}
+                  alt={event.title}
+                  
+                  className="object-cover hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+                {/* Icon overlay */}
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-white/90 p-3 rounded-full shadow-lg">
+                  {event.icon}
                 </div>
-                {index !== programData.length - 1 && (
-                  <div className="w-[2px] h-12 bg-gray-400/50"></div>
-                )}
               </div>
 
-              {/* Text */}
-              <div className="mt-4">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
-                  {item.time}
-                </h3>
-                <p className="text-lg md:text-xl uppercase font-semibold heading text-gray-700 mt-1">
-                  {item.title}
+              {/* Details */}
+              <div className="p-6 text-center">
+                <p className="text-gray-600 text-sm font-semibold uppercase tracking-widest mb-1">
+                  {event.date}
                 </p>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2 heading">
+                  {event.title}
+                </h3>
+                <p className="text-gray-700 text-lg font-medium mb-1">
+                  {event.time}
+                </p>
+               
               </div>
             </div>
           ))}
         </div>
-        <Image
-          src={'/images/white-flower.png'}
-          width={250}
-          height={150}
-          className="absolute -left-5 bottom-0 -z-10 opacity-40 "
-          alt="flower"
-
-        />
       </div>
     </section>
   );

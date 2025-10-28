@@ -23,7 +23,7 @@ const Hero = () => {
 
           <div className="relative w-full h-[120vh] overflow-hidden">
             <Image
-    src="/images/bg-main.jpg" // 🔄 replace with your actual image path
+    src="/images/bg-main2.png" // 🔄 replace with your actual image path
     alt="Wedding Background"
     fill
     priority
@@ -74,11 +74,11 @@ const Hero = () => {
               className="relative w-full max-w-sm mx-auto flex flex-col items-center justify-center py-8 px-4">
               {/* Month with lines */}
               <div className="flex items-end w-full justify-center">
-                <div className="flex-grow h-px bg-white opacity-50"></div>
+                <div className="flex-grow h-px bg-rose-700 opacity-50"></div>
                 <span className="px-4 text-xl md:text-2xl text-black font-serif tracking-widest uppercase drop-shadow-sm">
                   Nov
                 </span>
-                <div className="flex-grow h-px bg-white opacity-50"></div>
+                <div className="flex-grow h-px bg-rose-700 opacity-50"></div>
               </div>
               <div className="flex w-full justify-between items-center">
                 <p
@@ -98,14 +98,14 @@ const Hero = () => {
 
               {/* Year */}
               <div className="flex items-top w-full justify-center">
-                <div className="flex-grow h-px bg-white opacity-50"></div>
+                <div className="flex-grow h-px bg-rose-700 opacity-50"></div>
                 <span
                   // data-aos="fade-up"
                   // data-aos-delay="1000"
                   className="px-4 text-xl md:text-2xl text-black font-serif tracking-widest uppercase drop-shadow-sm">
                   2025
                 </span>
-                <div className="flex-grow h-px bg-white opacity-50"></div>
+                <div className="flex-grow h-px bg-rose-700 opacity-50"></div>
               </div>
               <p
                 // data-aos="fade-up"

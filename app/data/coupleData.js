@@ -6,7 +6,7 @@ const coupleData = [
     sonOf: "Mr. Manish Bansal  & Mrs. Renu Bansal",
     grandsonOf: "Lt. Shri Daughter Dayal Ji Bansal & Mrs. Saroj Bansal",
     profession: "",
-    image: "/images/groom.png",
+    image: "/images/groom1.png",
     instagram: "https://www.instagram.com/techcanva_19/",
   },
   {
@@ -15,7 +15,7 @@ const coupleData = [
     sonOf: "Mr. Vishal Jain & Mrs. Neetu Jain",
     grandsonOf: "Lt. Shri Rajendra Kumar Jain (Goyal) & Mrs. Sneha Lata Jain",
     profession: "",
-    image: "/images/bride.png",
+    image: "/images/bride1.png",
     instagram: "https://www.instagram.com/techcanva_19/",
   },
 ];

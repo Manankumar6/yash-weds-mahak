@@ -9,24 +9,40 @@ const SpecialMentionsSection = () => {
     <section className="relative w-full bg-gradient-to-b from-rose-50 to-pink-100 py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto text-center">
         {/* Section Heading */}
-        <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-rose-600 py-4">
+        <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-rose-600 py-4">
           Special Mentions
         </h2>
 
         {/* 🌸 Special Request */}
-        <div
-          data-aos="fade-up"
-          className="mt-10 bg-white/80 backdrop-blur-sm rounded-2xl shadow-md p-6 md:p-10"
-        >
-          <GiChainedHeart className="w-10 h-10 mx-auto text-rose-500 mb-3" />
-          <h3 className="text-2xl font-bold text-gray-800 mb-2">Special Request</h3>
-          <p className="text-gray-600 heading italic max-w-2xl mx-auto">
-            “Your gracious presence and heartfelt blessings are the most cherished gifts of all.”
-          </p>
-          <p className="text-lg font-medium text-gray-700">
-            — Anup Jain, Sashi Jain<br /> Vinay Jain, Rinki Jain <br />Vikas Jain, Poonam Jain
-          </p>
-        </div>
+       <div
+  data-aos="fade-up"
+  className="mt-10 relative rounded-2xl shadow-md overflow-hidden"
+  style={{
+    backgroundImage: "url('/images/relative-bg.png')", // ✅ your image path
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Overlay for readability */}
+  <div className="absolute inset-0 bg-white/80 backdrop-blur-[0.5px]"></div>
+
+  {/* Content */}
+  <div className="relative p-6 md:p-10 text-center">
+    <GiChainedHeart className="w-10 h-10 mx-auto text-rose-500 mb-3" />
+    <h3 className="text-2xl font-bold text-gray-800 mb-2">Special Request</h3>
+
+    <p className="text-gray-700 heading italic max-w-2xl mx-auto">
+      “Your gracious presence and heartfelt blessings are the most cherished gifts of all.”
+    </p>
+
+    <p className="text-lg font-semibold text-gray-800 mt-3 leading-relaxed">
+      — Anup Jain, Sashi Jain<br />
+     — Vinay Jain, Rinki Jain<br />
+     — Vikas Jain, Poonam Jain
+    </p>
+  </div>
+</div>
+
 
         {/* 💐 Welcome By / Bowdown To / RSVP */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
