@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import {   FaMapMarkerAlt, FaPhoneSquareAlt, FaEnvelopeOpen, FaPhoneAlt } from "react-icons/fa";
-import {  GiPartyPopper,  GiChainedHeart, GiLotusFlower, GiBigDiamondRing } from "react-icons/gi";
+import { FaPhoneAlt } from "react-icons/fa";
+import { GiPartyPopper, GiChainedHeart, GiLotusFlower, } from "react-icons/gi";
 import { MdBusiness } from "react-icons/md";
 
 const SpecialMentionsSection = () => {
@@ -14,55 +14,55 @@ const SpecialMentionsSection = () => {
         </h2>
 
         {/* 🌸 Special Request */}
-       <div
-  data-aos="fade-up"
-  className="mt-10 relative rounded-2xl shadow-md overflow-hidden"
-  style={{
-    backgroundImage: "url('/images/relative-bg.png')", // ✅ your image path
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->
-  {/* Overlay for readability */}
-  <div className="absolute inset-0 bg-white/80 backdrop-blur-[0.5px]"></div>
+        <div
+          data-aos="fade-up"
+          className="mt-10 relative rounded-2xl shadow-md overflow-hidden"
+          style={{
+            backgroundImage: "url('/images/relative-bg.png')", // ✅ your image path
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          {/* Overlay for readability */}
+          <div className="absolute inset-0 bg-white/80 backdrop-blur-[0.5px]"></div>
 
-  {/* Content */}
-  <div className="relative p-6 md:p-10 text-center">
-    <GiChainedHeart className="w-10 h-10 mx-auto text-rose-500 mb-3" />
-    <h3 className="text-2xl font-bold text-gray-800 mb-2">Special Request</h3>
+          {/* Content */}
+          <div className="relative p-6 md:p-10 text-center">
+            <GiChainedHeart className="w-10 h-10 mx-auto text-rose-500 mb-3" />
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">Special Request</h3>
 
-    <p className="text-gray-700 heading italic max-w-2xl mx-auto">
-      “Your gracious presence and heartfelt blessings are the most cherished gifts of all.”
-    </p>
+            <p className="text-gray-700 heading italic max-w-2xl mx-auto">
+              “Your gracious presence and heartfelt blessings are the most cherished gifts of all.”
+            </p>
 
-    <p className="text-lg font-semibold text-gray-800 mt-3 leading-relaxed">
-      — Anup Jain, Sashi Jain<br />
-     — Vinay Jain, Rinki Jain<br />
-     — Vikas Jain, Poonam Jain
-    </p>
-  </div>
-</div>
+            <p className="text-lg font-semibold text-gray-800 mt-3 leading-relaxed">
+              — Madhu, Baburam<br />
+              — Ritu, Manoj<br />
+              — Uma , Ankit
+            </p>
+          </div>
+        </div>
 
 
         {/* 💐 Welcome By / Bowdown To / RSVP */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
           {/* Welcome By */}
-          <div
+          {/* <div
             data-aos="fade-up"
             data-aos-delay="100"
             className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-md p-6"
           >
             <GiPartyPopper className="w-10 h-10 text-pink-500 mx-auto mb-2" />
             <h3 className="text-2xl font-bold text-gray-800">Welcome By</h3>
-              <p className="text-gray-600 heading italic max-w-2xl mx-auto mb-4">
-            “With open hearts and warm smiles, we welcome you to share in our joyous celebration.”
-          </p>
+            <p className="text-gray-600 heading italic max-w-2xl mx-auto mb-4">
+              “With open hearts and warm smiles, we welcome you to share in our joyous celebration.”
+            </p>
             <p className="text-gray-600 mt-2 text-lg">
-             — Mr.Sanjeev Mittal (Fufa ji) & Mrs. Neetu Mittal (Bua) <br />
+              — Mr.Sanjeev Mittal (Fufa ji) & Mrs. Neetu Mittal (Bua) <br />
               Ishan Jain <br />
               Ashish Jain
             </p>
-          </div>
+          </div> */}
 
           {/* Bowdown To */}
           <div
@@ -72,8 +72,8 @@ const SpecialMentionsSection = () => {
           >
             <GiLotusFlower className="w-10 h-10 text-rose-600 mx-auto mb-2" />
             <h3 className="text-2xl font-bold text-gray-800">Bowdown To</h3>
-            <p className="text-gray-600 mt-2 text-lg">
-             Sameeksha, Shivani, Rajeev, Pari, Lakshya, Aaru
+            <p className="text-gray-600 font-serif font-bold mt-2 text-lg">
+              Punit, Shayam, Ansh, Kunal, Prachi, Tanvi, Rudraksha
             </p>
           </div>
 
@@ -84,68 +84,40 @@ const SpecialMentionsSection = () => {
             className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-md p-6"
           >
             <div className="max-w-5xl mx-auto px-4">
-        {/* 🌸 Section Heading */}
-        <MdBusiness className="w-10 h-10 mx-auto text-rose-600 mb-3" />
-        <h3 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-rose-400 to-rose-700 mb-2">
-          Firm & Contact Details
-        </h3>
-        <p className="text-gray-600 italic mb-10 heading">
-          “With heartfelt gratitude to our well-wishers and supporters who made this celebration possible.”
-        </p>
+              {/* 🌸 Section Heading */}
+              <MdBusiness className="w-10 h-10 mx-auto text-rose-600 mb-3" />
+              <h3 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-rose-400 to-rose-700 mb-2">
+                Contact Details
+              </h3>
+              <p className="text-gray-600 italic mb-10 heading">
+                “With heartfelt gratitude to our well-wishers and supporters who made this celebration possible.”
+              </p>
 
-        {/* 👥 Names */}
-        <div className="mb-10">
-          <h4 className="text-xl font-semibold text-gray-800 mb-2">Vishal Jain</h4>
-          <h4 className="text-xl font-semibold text-gray-800">Neetu Jain</h4>
-        </div>
+              {/* 👥 Names */}
+              <div className="mb-10">
+                <h4 className="text-xl font-semibold text-gray-800 mb-2">Govind Sharma</h4>
+                <h4 className="text-xl font-semibold text-gray-800">Laxmi Sharma</h4>
+              </div>
 
-        {/* 🏢 Firm & Contact Info */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
-          <div className="bg-white/70 shadow-md p-5 rounded-2xl border border-gray-100 hover:shadow-lg transition-all">
-            <h4 className="text-xl font-semibold text-gray-800">Jain Cake House</h4>
-            <div className="flex items-center text-gray-700 mt-1">
-              <FaPhoneAlt className="text-rose-500 mr-2" />
-              <span>+91 9259579230</span>
+              {/* 🏢 Firm & Contact Info */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
+               
+                <div className="bg-white/70 shadow-md p-5 rounded-2xl border border-gray-100 hover:shadow-lg transition-all sm:col-span-2">
+                  
+                  <div className="flex items-center text-gray-700 mt-1">
+                    <FaPhoneAlt className="text-rose-500 mr-2" />
+                    <span>+91 7668117319</span>
+                  </div>
+                </div>
+                <div className="bg-white/70 shadow-md p-5 rounded-2xl border border-gray-100 hover:shadow-lg transition-all sm:col-span-2">
+                  
+                  <div className="flex items-center text-gray-700 mt-1">
+                    <FaPhoneAlt className="text-rose-500 mr-2" />
+                    <span>+91 9258001986</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div className="bg-white/70 shadow-md p-5 rounded-2xl border border-gray-100 hover:shadow-lg transition-all">
-            <h4 className="text-xl font-semibold text-gray-800">Jain Gift Gallery</h4>
-            <div className="flex items-center text-gray-700 mt-1">
-              <FaPhoneAlt className="text-rose-500 mr-2" />
-              <span>+91 7017647138</span>
-            </div>
-          </div>
-
-          <div className="bg-white/70 shadow-md p-5 rounded-2xl border border-gray-100 hover:shadow-lg transition-all">
-            <h4 className="text-xl font-semibold text-gray-800">Laxmi Decorator</h4>
-            <div className="flex items-center text-gray-700 mt-1">
-              <FaPhoneAlt className="text-rose-500 mr-2" />
-              <span>+91 8923595840</span>
-            </div>
-          </div>
-
-          <div className="bg-white/70 shadow-md p-5 rounded-2xl border border-gray-100 hover:shadow-lg transition-all">
-            <h4 className="text-xl font-semibold text-gray-800">
-              Anup Jain Lester Chudi Supplier
-            </h4>
-            <div className="flex items-center text-gray-700 mt-1">
-              <FaPhoneAlt className="text-rose-500 mr-2" />
-              <span>+91 9259520255</span>
-            </div>
-          </div>
-
-          <div className="bg-white/70 shadow-md p-5 rounded-2xl border border-gray-100 hover:shadow-lg transition-all sm:col-span-2">
-            <h4 className="text-xl font-semibold text-gray-800">
-              Sawarita Paras Nath Photo Frame Supplier
-            </h4>
-            <div className="flex items-center text-gray-700 mt-1">
-              <FaPhoneAlt className="text-rose-500 mr-2" />
-              <span>+91 7409054759</span>
-            </div>
-          </div>
-        </div>
-      </div>
           </div>
         </div>
 

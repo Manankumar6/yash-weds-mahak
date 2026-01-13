@@ -1,95 +1,100 @@
 "use client";
 import React from "react";
 import { venueData } from "../data/coupleData";
-import { FiMapPin } from "react-icons/fi";
+import { FiMapPin, FiCalendar, FiClock } from "react-icons/fi";
 import Link from "next/link";
 import Image from "next/image";
 
 const Venue = () => {
-    return (
-        <section
+  return (
+    <section
+      className="relative min-h-screen flex items-center justify-center py-20 px-4 bg-fixed bg-cover bg-center"
+      style={{ backgroundImage: `url(${venueData.backgroundImage})` }}
+    >
+      {/* Dark Overlay for better contrast */}
+      <div className="absolute inset-0 bg-black/50" />
 
-            style={{
-                backgroundImage: `url(${venueData.backgroundImage})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-            }}
-            className="relative py-16 px-4 md:px-8 h-[100vh] my-auto "
-        >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black/40"></div>
+      <div
+        data-aos="fade-up"
+        className="relative z-10 w-full max-w-2xl bg-white/80 backdrop-blur-lg rounded-[2rem] shadow-2xl overflow-hidden border border-white/20"
+      >
+        {/* Decorative Flower Top Left */}
+        <Image
+          src="/images/pink-flower.png"
+          width={150}
+          height={100}
+          className="absolute top-0 left-0 rotate-180 opacity-40 select-none pointer-events-none"
+          alt="decoration"
+        />
 
-            {/* Main content */}
-            <div
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                className="relative  items-center justify-center flex top-1/2  -translate-y-1/2  rounded-t-full max-w-xl h-[90%] md:h-[90vh] mx-auto bg-white/60 backdrop-blur-md shadow-2xl rounded-2xl p-8 md:p-12 pt-20 text-center space-y-4">
-                <div className=" space-y-10">
-                    <div
-                        data-aos="fade-down"
-                        data-aos-delay="300"
-                        className="flex justify-center items-center heading gap-2"
-                    >
-                        <Image
-                            src={"/images/venue.png"}
-                            width={80}
-                            height={80}
-                            alt="venue image"
-                            className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14"
-                        />
-                        <h2 className="text-3xl    font-semibold text-gray-900">
-                            {venueData.title}
-                        </h2>
-                    </div>
-                    <div
-                        data-aos="fade-up"
-                        data-aos-delay="400"
-                        className="flex flex-col sm:flex-row text-base sm:text-lg  heading justify-center gap-3 sm:gap-6 text-gray-700"
-                    >
-                        <p>
-                            <span className="font-semibold">Date:</span> {venueData.date}
-                        </p>
-                        <p>
-                            <span className="font-semibold">Time:</span> {venueData.time}
-                        </p>
-                    </div>
-                    <p
-                        data-aos="fade-up"
-                        data-aos-delay="500"
-                        className="text-lg sm:text-xl  heading font-semibold text-gray-700"
-                    >
-                        {venueData.venueName}
-                    </p>
-
-                    <p
-                        data-aos="fade-up"
-                        data-aos-delay="600"
-                        className="text-sm sm:text-base  font-bold heading text-gray-600 max-w-md"
-                    >
-                        {venueData.address}
-                    </p>
-
-
-                    <Link
-                        href={venueData.mapLink}
-                        target="_blank"
-                        className="inline-flex heading items-center justify-center gap-2 bg-accent/90 hover:bg-accent text-white font-medium py-3 px-6 rounded-full transition-all mt-6"
-                    >
-                        <FiMapPin className="w-5 h-5" />
-                        View on Google Map
-                    </Link>
-                    <Image
-                        src={'/images/pink-flower.png'}
-                        width={250}
-                        height={150}
-                        className="absolute right-0 bottom-0 -z-10 opacity-70 "
-                        alt="flower"
-
-                    />
-                </div>
+        <div className="p-8 md:p-14 flex flex-col items-center text-center space-y-8">
+          {/* Header Icon & Title */}
+          <div className="space-y-4">
+            <div className="bg-accent/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Image
+                src="/images/venue.png"
+                width={48}
+                height={48}
+                alt="Venue icon"
+                className="w-12 h-12 object-contain"
+              />
             </div>
-        </section>
-    );
+            <h2 className="text-4xl md:text-5xl font-serif text-gray-900 tracking-tight">
+              {venueData.title}
+            </h2>
+            <div className="w-24 h-1 bg-accent/30 mx-auto rounded-full" />
+          </div>
+
+          {/* Date & Time Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-md">
+            <div className="flex items-center justify-center gap-3 bg-white/50 p-4 rounded-xl shadow-sm">
+              <FiCalendar className="text-accent text-xl" />
+              <div className="text-left ">
+                <p className="text-xs uppercase tracking-widest text-gray-500 font-bold">Date</p>
+                <p className="text-gray-800 font-medium">{venueData.date}</p>
+              </div>
+            </div>
+            <div className="flex items-center justify-center gap-3 bg-white/50 p-4 rounded-xl shadow-sm">
+              <FiClock className="text-accent text-xl" />
+              <div className="text-left">
+                <p className="text-xs uppercase tracking-widest text-gray-500 font-bold">Time</p>
+                <p className="text-gray-800 font-medium">{venueData.time}</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Venue Details */}
+          <div className="space-y-3">
+            <h3 className="text-2xl font-semibold text-gray-800 italic">
+              {venueData.venueName}
+            </h3>
+            <p className="text-gray-600 leading-relaxed heading max-w-sm mx-auto">
+              {venueData.address}
+            </p>
+          </div>
+
+          {/* Action Button */}
+          <Link
+            href={venueData.mapLink}
+            target="_blank"
+            className="group relative inline-flex items-center justify-center gap-3 bg-gray-900 hover:bg-accent text-white font-semibold py-4 px-10 rounded-full transition-all duration-300 shadow-lg hover:shadow-accent/40"
+          >
+            <FiMapPin className="text-xl group-hover:animate-bounce" />
+            <span>Open in Google Maps</span>
+          </Link>
+        </div>
+
+        {/* Decorative Flower Bottom Right */}
+        <Image
+          src="/images/pink-flower.png"
+          width={200}
+          height={120}
+          className="absolute bottom-0 -z-10 right-0 opacity-60 select-none pointer-events-none"
+          alt="decoration"
+        />
+      </div>
+    </section>
+  );
 };
 
 export default Venue;

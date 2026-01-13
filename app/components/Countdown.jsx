@@ -38,92 +38,102 @@ const Countdown = ({ targetDate }) => {
     if (!mounted) return null;
 
     return (
-        <div
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            style={{
-                backgroundImage: "url(/images/ring-bg.jpg)",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-            }}
-            className="relative py-12 px-4 md:px-6"
-        >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black/40 z-0"></div>
+      <section
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      className="relative py-24 px-4 flex items-center justify-center min-h-[700px] overflow-hidden bg-fixed"
+      style={{
+        backgroundImage: "url(/images/ring-bg.jpg)",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
+    >
+      {/* Premium Dark Overlay */}
+      <div className="absolute inset-0 bg-black/50 z-0" />
 
-            {/* Main content */}
-            <div className="relative z-10 bg-white/90 p-6 sm:p-10 rounded-2xl max-w-2xl mx-auto">
-                <h2 className="text-5xl font-light text-gray-900  text-left">
-                    The Countdown
-                </h2>
-                <p className="text-md heading  text-gray-700 mb-6 ms-10 relative bottom-2 text-left">
-                    to forever has begun...
-                </p>
+      {/* Main Glassmorphism Card */}
+      <div className="relative z-10 w-full max-w-3xl bg-white/95 backdrop-blur-md rounded-[3rem] shadow-2xl p-10 md:p-20 text-center overflow-hidden border border-white/20">
+        
+        {/* Top Decoration */}
+        <img
+          src="/images/blue-flower.png"
+          className="absolute -top-6 -left-4 w-32 h-auto opacity-40 pointer-events-none"
+          alt="decoration"
+        />
 
-                {/* Countdown boxes */}
-                <div className="flex flex-wrap justify-center  gap-3 sm:gap-6 md:gap-10 mb-8">
-                    {[
-                        { label: "Days", value: timeLeft.days },
-                        { label: "Hours", value: timeLeft.hours },
-                        { label: "Minutes", value: timeLeft.minutes },
-                        { label: "Seconds", value: timeLeft.seconds },
-                    ].map((item, index) => (
-                        <div
-                            key={index}
-                            data-aos="zoom-in"
-                            data-aos-delay={index * 150}
-                            className="flex flex-col items-center bg-white/40 backdrop-blur-md  sm:px-5 py-2 sm:py-3 rounded-2xl shadow-md min-w-[100px] sm:min-w-[80px]"
-                        >
-                            <span className="text-4xl  font-bold text-accent drop-shadow-lg">
-                                {String(item.value).padStart(2, "0")}
-                            </span>
-                            <span className="text-md sm:text-sm md:text-base mt-1 font-light text-gray-800">
-                                {item.label}
-                            </span>
-                        </div>
-                    ))}
-                </div>
-
-                {/* Heart + Ring images */}
-                <div className="relative w-full max-w-xs sm:max-w-sm mx-auto mb-6">
-                    <Image
-                        width={300}
-                        height={400}
-                        src="/images/heart.png"
-                        className="w-full h-auto mix-blend-multiply opacity-20"
-                        alt="Heart"
-                      
-                    />
-                    <Image
-                        width={200}
-                        height={200}
-                        src="/images/ring.png"
-                        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                        alt="Ring"
-                        data-aos="zoom-in"
-                        data-aos-duration="1200"
-                        data-aos-delay="300"
-                    />
-                    <p
-                        data-aos="fade-up"
-                        data-aos-duration="1200"
-                        data-aos-delay="500"
-                        className="text-5xl md:text-7xl text-center absolute -translate-x-1/2 -translate-y-1/2 top-[74%]  left-1/2 w-full px-5 mx-auto">We can't wait to celebrate with you!</p>
-                        
-                </div>
-   <Image
-                    src={'/images/blue-flower.png'}
-                    width={200}
-                    height={100}
-                    className="absolute right-0 bottom-0 z-90 rotate-180"
-                    alt="flower"
-            
-                    />
-
-            </div>
-           
+        {/* Title Group */}
+        <div className="mb-14">
+          <h2 className="text-5xl md:text-6xl font-serif text-gray-900 mb-3 tracking-tight">
+            The Countdown
+          </h2>
+          <div className="flex items-center justify-center gap-3">
+            <div className="h-[1px] w-8 bg-accent/30" />
+            <p className="text-md font-medium italic text-accent uppercase ">
+              to forever has begun
+            </p>
+            <div className="h-[1px] w-8 bg-accent/30" />
+          </div>
         </div>
+
+        {/* Countdown Grid */}
+        <div className="grid grid-cols-2 sm:flex sm:justify-center gap-6 md:gap-10 mb-16">
+          {[
+            { label: "Days", value: timeLeft.days },
+            { label: "Hours", value: timeLeft.hours },
+            { label: "Min", value: timeLeft.minutes },
+            { label: "Sec", value: timeLeft.seconds },
+          ].map((item, index) => (
+            <div
+              key={index}
+              data-aos="zoom-in"
+              data-aos-delay={index * 100}
+              className="flex flex-col items-center group"
+            >
+              <div className="w-24 h-24 md:w-28 md:h-28 flex flex-col items-center justify-center bg-white border border-gray-100 rounded-3xl shadow-sm transition-transform duration-300 group-hover:-translate-y-2">
+                <span className="text-4xl md:text-5xl font-bold text-gray-800 tabular-nums">
+                  {String(item.value).padStart(2, "0")}
+                </span>
+              </div>
+              <span className="mt-3 text-xs uppercase tracking-[0.3em] font-bold text-gray-400">
+                {item.label}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* Iconic Centerpiece */}
+        <div className="relative h-40 flex items-center justify-center mb-8">
+          <img
+            src="/images/heart.png"
+            className="absolute w-40 h-auto opacity-10 animate-pulse mix-blend-multiply"
+            alt="Heart Decor"
+          />
+          <img
+            src="/images/ring.png"
+            className="relative z-10 w-24 h-auto drop-shadow-2xl"
+            alt="Wedding Rings"
+            data-aos="zoom-in"
+          />
+        </div>
+
+        {/* Footer Message */}
+        <div className="max-w-md mx-auto relative z-10">
+          <h3 
+            data-aos="fade-up" 
+            className="text-3xl md:text-4xl font-serif leading-snug text-gray-800"
+          >
+            We can&apos;t wait to celebrate with you!
+          </h3>
+        </div>
+
+        {/* Bottom Decoration */}
+        <img
+          src="/images/blue-flower.png"
+          className="absolute -bottom-10 -right-4 w-48 h-auto rotate-180 opacity-40 pointer-events-none"
+          alt="decoration"
+        />
+      </div>
+    </section>
     );
 };
 

@@ -47,14 +47,14 @@ const CoupleCard = ({ index, name, profession, image, instagram, role, sonOf, gr
         {/* Family Details - Elegant Spacing */}
         <div className="space-y-1 text-stone-500 text-sm italic font-light border-t border-stone-100 pt-4">
           {grandsonOf && (
-            <p className="leading-tight">
-              <span className="text-[10px] uppercase not-italic block text-stone-400 tracking-tighter">Grandchild of</span>
+            <p className="leading-tight heading ">
+              <span className="text-[10px] uppercase font-serif not-italic block text-stone-800 tracking-tighter mb-2">Grandchild of</span>
               {grandsonOf}
             </p>
           )}
           {sonOf && (
-            <p className="leading-tight pt-2">
-              <span className="text-[10px] uppercase not-italic block text-stone-400 tracking-tighter">Child of</span>
+            <p className="leading-tight pt-2 heading">
+              <span className="text-[10px] uppercase  font-serif  not-italic block text-stone-800 tracking-tighter">Child of</span>
               {sonOf}
             </p>
           )}

@@ -6,7 +6,7 @@ const coupleData = [
     sonOf: "Mr. Santosh Kumar  & Mrs. Kusum Devi",
     grandsonOf: "Lt. Shri Om Prakash Amar & Lt. Mrs. Narayani Devi",
     profession: "Digital Creator",
-    image: "/images/groom.jpg",
+    image: "/images/groom1.jpg",
     instagram: "https://www.instagram.com/manankumar_06/",
   },
   {
