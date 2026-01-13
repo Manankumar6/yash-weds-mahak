@@ -1,95 +1,85 @@
 import React from "react";
-import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
+
 const CoupleCard = ({ index, name, profession, image, instagram, role, sonOf, grandsonOf }) => {
   return (
     <div
       data-aos="fade-up"
-      data-aos-delay={index * 200} // staggered animation
-      data-aos-duration="1000"
-      className="relative w-full max-w-sm mx-auto overflow-hidden shadow-2xl rounded-2xl"
+      data-aos-delay={index * 200}
+      className="relative w-full max-w-[340px] mx-auto mb-20"
     >
-      {/* Background Image */}
-      <div className="relative w-full h-96" data-aos="zoom-in">
-        <Image
-          src={image}
-          alt={name}
-          fill
-          className="object-cover transition-transform duration-700 ease-in-out hover:scale-105"
-        />
-      </div>
-
-      {/* Overlay Box */}
-      <div
-        data-aos="zoom-in"
-        data-aos-delay={index * 200 + 300}
-        className="rounded-xl bg-white/30 backdrop-blur-md p-4 flex flex-col items-center text-center space-y-1"
-      >
-        {/* Role Line */}
-        <div
-          data-aos="fade-right"
-          data-aos-delay={index * 200 + 400}
-          className="flex items-center space-x-4 w-full justify-center"
-        >
-          <div className="flex-grow h-px bg-black opacity-50"></div>
-          <h2 className="text-md heading font-semibold text-gray-900 drop-shadow-lg uppercase tracking-wide">
-            {role}
-          </h2>
-          <div className="flex-grow h-px bg-black opacity-50"></div>
+      {/* 1. Main Image Container with a "Polaroid-Luxury" Frame */}
+      <div className="relative group overflow-hidden bg-stone-100 p-2 pb-12 shadow-xl border border-stone-200">
+        <div className="relative aspect-[4/5] overflow-hidden">
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
+          />
+          {/* Subtle Golden Gradient Overlay on image */}
+          <div className="absolute inset-0 bg-gradient-to-t from-stone-900/40 via-transparent to-transparent"></div>
         </div>
 
-        {/* Name */}
-        <h2
-          data-aos="zoom-in-up"
-          data-aos-delay={index * 200 + 500}
-          className="text-4xl font-semibold text-gray-900 drop-shadow-lg"
-        >
+        {/* 2. Floating Elegant Role Label */}
+        <div className="absolute top-6 left-[-10px] bg-[#C5A358] text-white px-6 py-1 text-[10px] tracking-[0.3em] uppercase shadow-lg">
+          {role}
+        </div>
+      </div>
+
+      {/* 3. The Content Box (Intentional Overlap) */}
+      <div 
+        className="relative -mt-16 mx-4 z-20 bg-white p-6 shadow-2xl border-t-2 border-[#C5A358] text-center"
+        data-aos="fade-up"
+        data-aos-delay={index * 200 + 300}
+      >
+        {/* Name with Serif Styling */}
+        <h2 className="text-3xl heading italic text-stone-800 leading-tight">
           {name}
         </h2>
-        {/* Grandson / Granddaughter of */}
-        {(grandsonOf) && (
-          <p
-            data-aos="fade-up"
-            data-aos-delay={index * 200 + 700}
-            className="text-sm md:text-base text-text-secondary italic mb-1 heading"
-          >
-            {grandsonOf}
-          </p>
-        )}
-        {/* Son of */}
-        <p
-          data-aos="fade-up"
-          data-aos-delay={index * 200 + 600}
-          className="text-sm md:text-base text-text-secondary italic mb-1 heading"
-        >
-          {sonOf}
-        </p>
 
-        {/* Profession */}
+        {/* Profession - Minimalist */}
         {profession && (
-          <p
-            data-aos="fade-up"
-            data-aos-delay={index * 200 + 700}
-            className="text-gray-800 text-lg drop-shadow-sm"
-          >
+          <p className="text-[10px] uppercase  tracking-widest text-[#C5A358] font-bold mt-1 mb-4">
             {profession}
           </p>
         )}
 
-        {/* Instagram Link */}
+        {/* Family Details - Elegant Spacing */}
+        <div className="space-y-1 text-stone-500 text-sm italic font-light border-t border-stone-100 pt-4">
+          {grandsonOf && (
+            <p className="leading-tight">
+              <span className="text-[10px] uppercase not-italic block text-stone-400 tracking-tighter">Grandchild of</span>
+              {grandsonOf}
+            </p>
+          )}
+          {sonOf && (
+            <p className="leading-tight pt-2">
+              <span className="text-[10px] uppercase not-italic block text-stone-400 tracking-tighter">Child of</span>
+              {sonOf}
+            </p>
+          )}
+        </div>
+
+        {/* 4. Minimal Instagram Icon Button */}
         {instagram && (
-          <a
-            data-aos="fade-up"
-            data-aos-delay={index * 200 + 800}
-            href={instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 px-6 py-2 border flex items-center border-gray-400 text-black heading rounded-full shadow-md hover:bg-black hover:text-white transition-all duration-300"
-          >
-            <FaInstagram className="size-4 me-3" /> Instagram
-          </a>
+          <div className="mt-6 flex justify-center">
+            <a
+              href={instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-stone-800 hover:text-[#C5A358] transition-colors duration-300"
+            >
+              <FaInstagram className="text-lg" />
+              <span className="text-[10px] uppercase tracking-widest font-semibold border-b border-stone-800">
+                Follow Journey
+              </span>
+            </a>
+          </div>
         )}
       </div>
+
+      {/* 5. Abstract Background Element for Premium Texture */}
+      <div className="absolute -bottom-6 -right-4 w-24 h-24 bg-stone-200/50 -z-10 rounded-full blur-2xl"></div>
     </div>
   );
 };

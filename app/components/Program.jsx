@@ -13,31 +13,16 @@ import { FaScroll } from "react-icons/fa";
 
 const programData = [
   {
-    date: "19th November 2025",
+    date: "10th February 2026",
     time: "11:00 AM",
     title: "Lagan Lekhni",
     icon: <FaScroll className="w-8 h-8 text-rose-600" />,
     image: "/images/event8.png",
     
   },
+ 
   {
-    date: "19th November 2025",
-    time: "2:00 PM",
-    title: "Lunch",
-    icon: <MdDinnerDining className="w-8 h-8 text-rose-600" />,
-    image: "/images/event9.png",
-    
-  },
-  {
-    date: "22th November 2025",
-    time: "5:00 PM",
-    title: "Engagement Ceremony",
-    icon: <GiDiamondRing className="w-8 h-8 text-rose-600" />,
-    image: "/images/event1.png",
-    
-  },
-  {
-    date: "22th November 2025",
+    date: "11th February 2026",
     time: "11:00 AM",
     title: "Haldi & Mehendi",
     icon: <GiCampfire className="w-8 h-8 text-yellow-600" />,
@@ -45,39 +30,33 @@ const programData = [
     
   },
   {
-    date: "23th November 2025",
-    time: "4:00 PM",
-    title: "WELCOME CEREMONY",
+    date: "12th February 2026",
+    time: "8:00 PM",
+    title: "Baraat Welcome",
     icon: <GiMusicalNotes className="w-8 h-8 text-indigo-600" />,
     image: "/images/event3.png",
     
   },
+ 
   {
-    date: "23th November 2025",
-    time: "6:00 PM",
-    title: "wedding vows",
-    icon: <GiCampfire className="w-8 h-8 text-orange-600" />,
-    image: "/images/event4.png",
-    
-  },
-  {
-    date: "23th November 2025",
-    time: "8:00 PM",
+    date: "12th February 2026",
+    time: "7:00 PM",
     title: "Dinner",
     icon: <MdDinnerDining className="w-8 h-8 text-indigo-600" />,
     image: "/images/event5.png",
     
   },
-  {
-    date: "23th November 2025",
-    time: "9:00 PM",
-    title: "Reception Night",
-    icon: <GiGlassCelebration className="w-8 h-8 text-emerald-600" />,
-    image: "/images/event6.png",
+   {
+    date: "13th February 2026",
+    time: "Early Morning",
+    title: "Wedding Vows",
+    icon: <GiCampfire className="w-8 h-8 text-orange-600" />,
+    image: "/images/event4.png",
     
   },
+ 
   {
-    date: "24th December 2025",
+    date: "13th December 2025",
     time: "Morning",
     title: "Tearful Eyes (Bidaai)",
     icon: <FaRegFaceSadTear className="w-8 h-8 text-gray-600" />,

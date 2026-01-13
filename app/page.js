@@ -23,11 +23,19 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <p
-        data-aos="zoom-in"
-        className="text-center text-5xl md:text-6xl font-bold px-6 py-10 bg-gradient-to-b from-pink-200 via-rose-400 to-rose-600 text-transparent bg-clip-text drop-shadow-[0_0_20px_rgba(255,182,193,0.5)] tracking-wide">
-        Meet the Lovely Couple
-      </p>
+    <div className="py-16 px-6 text-center" data-aos="fade-up">
+  {/* Small Subtitle */}
+  <span className="block uppercase tracking-[0.4em] text-stone-400 text-[10px] mb-4">
+    The Beginning of Forever
+  </span>
+  
+  {/* Main Title */}
+  <h2 className="text-4xl md:text-6xl font-serif italic text-stone-800 relative inline-block">
+    Meet the Lovely Couple
+    {/* Decorative underline */}
+    <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-[1px] bg-rose-300"></div>
+  </h2>
+</div>
 
       <div
         style={{

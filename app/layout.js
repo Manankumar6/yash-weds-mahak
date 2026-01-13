@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Allura, Playfair_Display, Cormorant_Garamond, Poppins } from "next/font/google";
+import { Geist, Geist_Mono, Allura, Playfair_Display, Cormorant_Garamond, Poppins, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import AosInitializer from "./components/AosInitializer";
 import FloatingMusicButton from './components/FloatingMusicButton'
@@ -18,21 +18,25 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-dancing",
+});
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
 export const metadata = {
-   title: "Yash & Mahak's Wedding Invitation | 23 November 2025",
+   title: "Manan & Shivani's Wedding Invitation | 12 February  2026",
   description:
     "Join us in celebrating the union of Yash & Mahak — a journey of love, laughter, and togetherness. Explore our digital wedding invitation, event details, and RSVP online.",
   keywords: [
     "wedding invitation",
     "digital wedding card",
     "wedding website",
-    "Yash and Mahak wedding",
+    "Manan and Shivani wedding",
     "Indian wedding",
     "RSVP online",
   ],
@@ -42,7 +46,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${poppins.variable} ${allura.className} antialiased`}
+        className={`${geistSans.className} ${poppins.variable} ${dancingScript.variable} antialiased`}
       >
         <AosInitializer/>
         {children}

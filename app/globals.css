@@ -17,6 +17,9 @@
 .heading {
   font-family: var(--font-poppins);
 }
+p{
+  font-family: var(--font-dancing)
+}
 
 /* 🧩 Tailwind theme inline setup */
 @theme inline {

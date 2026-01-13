@@ -2,40 +2,40 @@
 const coupleData = [
   {
     role: "The Groom",
-    name: "Yash",
-    sonOf: "Mr. Manish Bansal  & Mrs. Renu Bansal",
-    grandsonOf: "Lt. Shri Daughter Dayal Ji Bansal & Mrs. Saroj Bansal",
-    profession: "",
-    image: "/images/groom1.png",
-    instagram: "https://www.instagram.com/techcanva_19/",
+    name: "Manan",
+    sonOf: "Mr. Santosh Kumar  & Mrs. Kusum Devi",
+    grandsonOf: "Lt. Shri Om Prakash Amar & Lt. Mrs. Narayani Devi",
+    profession: "Digital Creator",
+    image: "/images/groom.jpg",
+    instagram: "https://www.instagram.com/manankumar_06/",
   },
   {
     role: "The Bride",
-    name: "Mahak",
-    sonOf: "Mr. Vishal Jain & Mrs. Neetu Jain",
-    grandsonOf: "Lt. Shri Rajendra Kumar Jain (Goyal) & Mrs. Sneha Lata Jain",
+    name: "Shivani",
+    sonOf: "Mr. Govind Sharma & Mrs. Laxmi Sharma",
+    grandsonOf: "Lt. Shri Lalaram Sharma",
     profession: "",
-    image: "/images/bride1.png",
-    instagram: "https://www.instagram.com/techcanva_19/",
+    image: "/images/bride.jpg",
+    instagram: "https://www.instagram.com/_sh_ivi_77/",
   },
 ];
 
 
 export const WEDDING_DATE = {
-  year: 2025,
-  month: 11, // February (1 = January, 2 = February)
-  day: 23,
+  year: 2026,
+  month: 2, // February (1 = January, 2 = February)
+  day: 12,
   hour: 20, // 24-hour format → 20 = 8 PM
   minute: 0,
 };
 
 export const venueData = {
   title: "Wedding Venue",
-  venueName: "Tejram Dharampaul Charitable Trust",
-  address: "Rukmini Vihar, Vrindavan, Mathura (U.P.)",
-  date: "23th November 2025",
+  venueName: "Paradise Garden",
+  address: "Maruti Estate, Atwaliya Road, Agra",
+  date: "12th February 2026",
   time: "8:00 PM Onwards",
-  mapLink: "https://maps.app.goo.gl/L7a9b55PNQ3r7ruQ7",
+  mapLink: "https://maps.app.goo.gl/4NUt3aJUpLBd58dR7",
   backgroundImage: "/images/venue-bg.png",
 };
 

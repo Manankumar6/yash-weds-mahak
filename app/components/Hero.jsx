@@ -1,128 +1,95 @@
-
-import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
   return (
-
     <section
-      className="relative w-full h-[120vh] bg-cover bg-center bg-bg-primary"
+      className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center"
       style={{
-        backgroundImage: "url('https://plus.unsplash.com/premium_photo-1674235766088-80d8410f9523?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2VkZGluZyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000')",
-        backgroundPosition: "contain",
+        backgroundImage:
+          "url('https://plus.unsplash.com/premium_photo-1674235766088-80d8410f9523')",
       }}
     >
-      {/* Gradient overlay on background */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      {/* Soft gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
 
+      {/* Main Card */}
+      <div className="relative z-10 w-full max-w-md mx-auto overflow-hidden  shadow-2xl">
+        {/* Foreground Image */}
+        <div className="relative h-[65vh]">
+          <img
+            src="/images/main_cover.jpg"
+            alt="Wedding"
+            className="w-full h-full object-cover"
+          />
 
+          {/* Vignette */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_55%,rgba(0,0,0,0.65))]" />
+        </div>
 
-      {/* Foreground image container */}
-      <div className="absolute h-full inset-0 flex items-center justify-center">
-        <div className="relative w-md h-full">
+        {/* Content */}
+        <div className="relative bg-bg-overlay backdrop-blur-md px-6 py-8 text-center">
+          <p className="text-sm uppercase tracking-widest  font-semibold">
+            Together with their families
+          </p>
 
-          <div className="relative w-full h-[120vh] overflow-hidden">
-            <Image
-    src="/images/bg-main2.png" // 🔄 replace with your actual image path
-    alt="Wedding Background"
-    fill
-    priority
-    className="object-cover pointer-events-none select-none [transform:translateZ(0)]"
-  />
+          <h1
+            className="
+              mt-3 text-4xl md:text-5xl font-bold  text-text-primary
+              drop-shadow-md
+            "
+          >
+            <span data-aos="fade-right">Manan</span>{" "}
+            <span className="text-accent mx-1">&</span>{" "}
+            <span data-aos="fade-left">Shivani</span>
+          </h1>
 
-            {/* 🔮 Vignette effect overlay */}
-            <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_60%,rgba(0,0,0,0.6))]"></div>
-          </div>
+          <p className="mt-3 text-lg md:text-base  font-light leading-relaxed">
+            invite you to celebrate their wedding
+          </p>
 
-          <div className="absolute bottom-0 w-full py-4 text-center px-6 bg-bg-overlay z-20">
-         
-
-            <p
-              // data-aos="fade-up"
-              // data-aos-delay="100"
-              className="mt-3 text-text-secondary text-xl mb-1 font-light heading  drop-shadow-sm">
-              Together with their families
-            </p>
-            <h1
-              // data-aos="zoom-in"
-              // data-aos-delay="300"
-              className={`
-                text-5xl md:text-6xl font-normal text-text-primary 
-                drop-shadow-[0_0_8px_var(--color-glow)]
-              `}
-            >
-              <span
-                data-aos='fade-right'
-              >Yash</span>{" "}
-              <span className="text-accent drop-shadow-[0_0_12px_var(--color-accent)]">
-                &
-              </span>{" "}
-              <span
-                data-aos='fade-left'> Mahak</span>
-            </h1>
-            <p
-              // data-aos="fade-up"
-              // data-aos-delay="500"
-              className="mt-3 text-text-secondary text-xl mb-1 font-light heading  drop-shadow-sm">
-              invite you <br />
-
-              to their wedding celebration
-            </p>
-            <div
-              // data-aos="fade-up"
-              // data-aos-delay="700"
-              className="relative w-full max-w-sm mx-auto flex flex-col items-center justify-center py-8 px-4">
-              {/* Month with lines */}
-              <div className="flex items-end w-full justify-center">
-                <div className="flex-grow h-px bg-rose-700 opacity-50"></div>
-                <span className="px-4 text-xl md:text-2xl text-black font-serif tracking-widest uppercase drop-shadow-sm">
-                  Nov
-                </span>
-                <div className="flex-grow h-px bg-rose-700 opacity-50"></div>
-              </div>
-              <div className="flex w-full justify-between items-center">
-                <p
-                  //  data-aos="fade-right" data-aos-delay="800" 
-                  className="heading">SUNDAY</p>
-                {/* Main Day Number */}
-                <span
-                  // data-aos="zoom-in"
-                  //   data-aos-delay="900" 
-                  className="text-6xl md:text-8xl  heading text-accent drop-shadow-lg">
-                  23
-                </span>
-                <p
-                  // data-aos="fade-left" data-aos-delay="800"
-                  className="heading">AT 8:00 PM</p>
-              </div>
-
-              {/* Year */}
-              <div className="flex items-top w-full justify-center">
-                <div className="flex-grow h-px bg-rose-700 opacity-50"></div>
-                <span
-                  // data-aos="fade-up"
-                  // data-aos-delay="1000"
-                  className="px-4 text-xl md:text-2xl text-black font-serif tracking-widest uppercase drop-shadow-sm">
-                  2025
-                </span>
-                <div className="flex-grow h-px bg-rose-700 opacity-50"></div>
-              </div>
-              <p
-                // data-aos="fade-up"
-                // data-aos-delay="500"
-                className="mt-3 text-text-secondary text-xl mb-1 font-light heading  drop-shadow-sm">
-                Awaiting Your Presence Jain (Goyal) Family
-              </p>
-
+          {/* Date Section */}
+          <div className="mt-6 space-y-3">
+            <div className="flex items-center justify-center gap-4">
+              <span className="h-px w-full bg-accent/50"></span>
+              <span className="text-sm tracking-[0.3em] font-serif">
+                FEB
+              </span>
+              <span className="h-px w-full bg-accent/50"></span>
             </div>
 
-            <button
-              // data-aos="fade-up"
-              // data-aos-delay="1100"
-              className="font-bold px-8 py-3 bg-accent text-white text-lg rounded-full shadow-md hover:opacity-90 transition">
-              Save the Date
-            </button>
+            <div className="flex items-center justify-evenly px-4">
+              <span className="text-xs tracking-widest font-light">
+                THURSDAY
+              </span>
+              <span className="text-6xl font-serif text-accent">
+                12
+              </span>
+              <span className="text-xs tracking-widest font-light">
+                8:00 PM
+              </span>
+            </div>
+
+            <div className="flex items-center justify-center gap-4">
+              <span className="h-px w-full bg-accent/50"></span>
+              <span className="text-sm tracking-[0.3em] font-serif">
+                2026
+              </span>
+              <span className="h-px w-full bg-accent/50"></span>
+            </div>
           </div>
+
+          {/* Button */}
+          <button
+            className="
+              mt-6 px-8 py-3 rounded-full
+              border border-accent text-accent
+              tracking-wide uppercase text-sm
+              hover:bg-accent hover:text-white
+              transition-all duration-300
+            "
+          >
+            Save the Date
+          </button>
         </div>
       </div>
     </section>
