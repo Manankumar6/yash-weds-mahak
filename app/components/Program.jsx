@@ -26,7 +26,7 @@ const programData = [
     time: "11:00 AM",
     title: "Haldi & Mehendi",
     icon: <GiCampfire className="w-8 h-8 text-yellow-600" />,
-    image: "/images/event2.png",
+    image: "/images/haldi2.png",
     
   },
    {
@@ -42,7 +42,7 @@ const programData = [
     time: "8:00 PM",
     title: "Baraat Welcome",
     icon: <GiMusicalNotes className="w-8 h-8 text-indigo-600" />,
-    image: "/images/event3.png",
+    image: "/images/baraat1.png",
     
   },
  
@@ -52,7 +52,7 @@ const programData = [
     time: "Early Morning",
     title: "Wedding Vows",
     icon: <GiCampfire className="w-8 h-8 text-orange-600" />,
-    image: "/images/event4.png",
+    image: "/images/weddingvow.jpg",
     
   },
  
@@ -113,7 +113,7 @@ const Program = () => {
               className="group relative flex flex-col bg-white rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100"
             >
               {/* Image Container */}
-              <div className="relative h-72 w-full p-3 overflow-hidden">
+              <div className="relative h-96 w-full p-3 overflow-hidden">
                 <div className="relative h-full w-full overflow-hidden rounded-[2rem]">
                   <img
                     src={event.image}

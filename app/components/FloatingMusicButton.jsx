@@ -62,7 +62,7 @@ export default function MusicConsentPopup() {
       </p>
 
       {/* 🎧 Audio element */}
-      <audio ref={audioRef} src="/music/wedding-theme.mp3" loop preload="auto" />
+      <audio ref={audioRef} src="/music/theme.mp3" loop preload="auto" />
 
       {/* 🌸 Popup Modal */}
       {showModal && (
