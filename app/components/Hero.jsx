@@ -15,20 +15,20 @@ const Hero = () => {
       {/* Main Card */}
       <div className="relative z-10 w-full max-w-md mx-auto overflow-hidden  shadow-2xl">
         {/* Foreground Image */}
-         <div className="relative w-full h-[120vh] overflow-hidden">
-            <video
-              src="/images/bg.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
-            />
+        <div className="relative w-full  overflow-hidden">
+          <video
+            src="/images/bg.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          />
 
-            {/* 🔮 Vignette effect overlay */}
-            <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_60%,rgba(0,0,0,0.6))]"></div>
-          </div>
-       
+          {/* 🔮 Vignette effect overlay */}
+          <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_60%,rgba(0,0,0,0.6))]"></div>
+        </div>
+
 
         {/* Content */}
         <div className="relative bg-bg-overlay backdrop-blur-md px-6 py-8 text-center">
@@ -36,18 +36,18 @@ const Hero = () => {
             Together with their families
           </p>
 
-          <h1
-            className="
-              mt-3 text-3xl md:text-4xl font-bold heading  text-text-primary
-              drop-shadow-md
-            "
-          >
-            <span data-aos="fade-right">Manan</span>{" "}
-            <span className="text-accent mx-1">&</span>{" "}
-            <span data-aos="fade-left">Shivani</span>
+          <h1 className="mt-3 text-3xl md:text-4xl  font-black uppercase italic">
+            <div className="flex items-center gap-2 justify-center">
+              <span data-aos="fade-right" className="bg-gradient-to-b from-slate-50 to-[#ccd5ae] bg-clip-text text-transparent w-full md:w-1/2">
+                Manan
+              </span>
+              <span className=" text-[#ccd5ae]/60 text-4xl font-light italic">&</span>
+              <span data-aos="fade-left" className="bg-gradient-to-b from-slate-50 to-[#ccd5ae] bg-clip-text text-transparent w-full md:w-1/2">
+                Shivani
+              </span>
+            </div>
           </h1>
-
-          <p className="mt-3 text-lg md:text-base  font-light leading-relaxed">
+           <p className="text-sm uppercase tracking-widest text-center  font-semibold mb-2">
             invite you to celebrate their wedding
           </p>
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 export default function RSVPSection() {
-     const letters = [
+  const letters = [
     { src: "/images/R.png", alt: "R" },
     { src: "/images/S.png", alt: "S" },
     { src: "/images/V.png", alt: "V" },
@@ -25,7 +25,10 @@ export default function RSVPSection() {
       <div className="absolute inset-0 bg-black/30" />
 
       {/* 💌 RSVP Card */}
-      <div className="relative my-10 z-10 max-w-md w-full text-center bg-white/30 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/40 p-10">
+      <div
+        data-aos="zoom-in"
+        className="relative z-10 max-w-lg w-[90%] text-center bg-white/20 backdrop-blur-xl rounded-[2.5rem] shadow-2xl border border-white/30 p-8 md:p-12 m-3"
+      >
         {/* ✨ RSVP Letters as Images */}
         <div className="flex justify-center flex-wrap  p-2 ">
           {letters.map((item, i) => (
@@ -40,18 +43,30 @@ export default function RSVPSection() {
           ))}
         </div>
 
-        <p className="text-white/90 text-xl font-light mb-8">
-          We’d love to celebrate this special day with you!  
-          Kindly confirm your presence below.
-        </p>
-       
+        <div className="space-y-6">
+          <h2 className="text-3xl md:text-4xl font-serif text-white italic">
+            Will You Join Us?
+          </h2>
+
+          <p className="text-white/90 text-lg md:text-xl font-light leading-relaxed">
+            We&apos;d love to celebrate this special day with you! <br />
+            Kindly confirm your presence below.
+          </p>
+        </div>
+
 
         {/* 📝 RSVP Button */}
-        <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfICfvPPryMRVAMxXjOPAWMVcXJe0Zc_aGngMqPxH4f9ETsjg/viewform?usp=publish-editor' target="_blank">
-        <button className="bg-white text-gray-800 font-semibold px-8 py-3 rounded-full hover:bg-pink-100 transition-all duration-300">
-          Confirm Attendance
-        </button>
-        </Link>
+        <div className="pt-4">
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfICfvPPryMRVAMxXjOPAWMVcXJe0Zc_aGngMqPxH4f9ETsjg/viewform?usp=publish-editor"
+            target="_blank"
+          >
+            <button className="bg-white text-gray-900 font-bold px-10 py-4 rounded-full shadow-lg hover:bg-rose-50 hover:scale-105 transition-all duration-300 uppercase tracking-widest text-sm">
+              Confirm Attendance
+            </button>
+          </Link>
+        </div>
+
       </div>
     </section>
   );
