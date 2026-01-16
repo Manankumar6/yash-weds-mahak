@@ -61,7 +61,7 @@ const programData = [
     time: "Morning",
     title: "Tearful Eyes (Bidaai)",
     icon: <FaRegFaceSadTear className="w-8 h-8 text-gray-600" />,
-    image: "/images/event7.png",
+    image: "/images/bidaai.jpg",
     
   },
 ];

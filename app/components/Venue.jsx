@@ -73,6 +73,17 @@ const Venue = () => {
             </p>
           </div>
 
+          {/* Map */}
+          <div className="mt-8 w-full rounded-lg overflow-hidden border border-amber-600/10">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.2270371895665!2d77.9583387!3d27.180600199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397477e91bc7134f%3A0x3a08e9caf275cb3e!2sParadise%20Garden!5e0!3m2!1sen!2sin!4v1768537530690!5m2!1sen!2sin"
+              width="100%"
+              height="220"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+            />
+          </div>
           {/* Action Button */}
           <Link
             href={venueData.mapLink}

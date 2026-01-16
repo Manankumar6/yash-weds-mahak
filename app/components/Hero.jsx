@@ -15,16 +15,20 @@ const Hero = () => {
       {/* Main Card */}
       <div className="relative z-10 w-full max-w-md mx-auto overflow-hidden  shadow-2xl">
         {/* Foreground Image */}
-        <div className="relative h-[65vh]">
-          <img
-            src="/images/main_cover.jpg"
-            alt="Wedding"
-            className="w-full h-full object-cover"
-          />
+         <div className="relative w-full h-[120vh] overflow-hidden">
+            <video
+              src="/images/bg.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
 
-          {/* Vignette */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_55%,rgba(0,0,0,0.65))]" />
-        </div>
+            {/* 🔮 Vignette effect overlay */}
+            <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_60%,rgba(0,0,0,0.6))]"></div>
+          </div>
+       
 
         {/* Content */}
         <div className="relative bg-bg-overlay backdrop-blur-md px-6 py-8 text-center">
@@ -34,7 +38,7 @@ const Hero = () => {
 
           <h1
             className="
-              mt-3 text-4xl md:text-5xl font-bold  text-text-primary
+              mt-3 text-3xl md:text-4xl font-bold heading  text-text-primary
               drop-shadow-md
             "
           >
